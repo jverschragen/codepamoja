@@ -14,6 +14,7 @@
     <session id="-514268817">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -87,9 +88,9 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="840" />
+    <option name="x" value="346" />
     <option name="y" value="23" />
-    <option name="width" value="840" />
+    <option name="width" value="1334" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
@@ -131,19 +132,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538386676745</updated>
-      <workItem from="1538386678000" duration="1876000" />
+      <workItem from="1538386678000" duration="2114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1876000" />
+    <option name="totallyTimeSpent" value="2114000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="23" width="840" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="346" y="23" width="1334" height="1027" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.43734336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27012384" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
