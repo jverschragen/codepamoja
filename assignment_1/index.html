@@ -11,7 +11,7 @@
 <nav class="navigation__wrapper">
     <div class="container">
         <div class="logo__wrapper">
-            <img src="http://via.placeholder.com/100x40" alt="" class="logo">
+            <img src="http://via.placeholder.com/180x60" alt="" class="logo">
         </div>
         <ul class="navigation">
             <li class="navigation__item"><a class="navigation__link" href="#">Link</a></li>
@@ -22,6 +22,7 @@
     </div>
 </nav>
 <header>
+    <div class="header__background"></div>
     <div class="container">
         <div class="header__wrapper">
             <h1 class="header__title">Website Headline</h1>
@@ -32,50 +33,58 @@
 <section id="introduction" class="section">
     <div class="container">
         <h2 class="section__title">Introduction</h2>
-        <div class="section__row">
+        <div class="section__row section__row--mb">
             <div class="section__col6">
                 <h3 class="introduction__title">Lorem ipsum dolor</h3>
                 <p class="introduction__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="section__col6">
-                <div class="introduction__pointer"></div>
-                <img class="responsive__img" src="http://via.placeholder.com/1600x900" alt="">
+                <div class="img__wrapper">
+                    <div class="introduction__pointer"></div>
+                    <img class="responsive__img" src="http://via.placeholder.com/1600x900" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section__row section__row--mb section__row--reversed">
+            <div class="section__col6">
+                <div class="img__wrapper">
+                    <div class="introduction__pointer"></div>
+                    <img class="responsive__img" src="http://via.placeholder.com/1600x900" alt="">
+                </div>
+            </div>
+            <div class="section__col6">
+                <h3 class="introduction__title">Lorem ipsum dolor</h3>
+                <p class="introduction__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
         <div class="section__row">
             <div class="section__col6">
-                <div class="introduction__pointer"></div>
-                <img class="responsive__img" src="http://via.placeholder.com/1600x900" alt="">
-            </div>
-            <div class="section__col6">
-                <h3 class="introduction__title">Lorem ipsum dolor</h3>
-                <p class="introduction__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-        <div class="section__row">
-            <div class="section__col6">
                 <h3 class="introduction__title">Lorem ipsum dolor</h3>
                 <p class="introduction__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="section__col6">
-                <div class="introduction__pointer"></div>
-                <img class="responsive__img" src="http://via.placeholder.com/1600x900" alt="">
+                <div class="img__wrapper">
+                    <div class="introduction__pointer"></div>
+                    <img class="responsive__img" src="http://via.placeholder.com/1600x900" alt="">
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section id="contact" class="section">
-    <h2 class="section__title">Another subtitle</h2>
-    <div class="section__row">
-        <div class="section__col8 section__col8--center">
-            <form class="form" action="">
-                <input class="form__input" type="text" name="firstName" placeholder="First Name" />
-                <input class="form__input" type="text" name="lastName" placeholder="Last Name" />
-                <input class="form__input" type="email" name="email" placeholder="E-mail" />
-                <input class="form__input" type="tel" name="tel" placeholder="Mobile Phone">
-                <textarea class="form__textarea" name="message" rows="4" placeholder="Message"></textarea>
-                <button type="submit" class="form__button form__button--right button__primary">Submit</button>
-            </form>
+    <div class="container">
+        <h2 class="section__title">Another subtitle</h2>
+        <div class="section__row">
+            <div class="section__col8 section__col8--center">
+                <form class="form" action="">
+                    <input class="form__input" type="text" name="firstName" placeholder="First Name" />
+                    <input class="form__input" type="text" name="lastName" placeholder="Last Name" />
+                    <input class="form__input" type="email" name="email" placeholder="E-mail" />
+                    <input class="form__input" type="tel" name="tel" placeholder="Mobile Phone">
+                    <textarea class="form__textarea" name="message" rows="4" placeholder="Message"></textarea>
+                    <button type="submit" class="form__button form__button--right button__primary">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
