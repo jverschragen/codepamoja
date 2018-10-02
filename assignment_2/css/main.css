@@ -16,16 +16,30 @@ body{
     box-sizing: border-box;
 }
 
+.bg--gray{
+    background-color: #f9f9f9;
+}
+
+.text--align--center{
+    text-align: center;
+}
+
+/* sections styling */
+
 .section__row{
     margin-left: -15px;
     margin-right: -15px;
 }
+
+/* clearfix */
 
 .section__row::after{
     content: "";
     clear: both;
     display: table;
 }
+
+/* columns*/
 
 .section__col12, .section__col6{
     position: relative;
@@ -43,11 +57,29 @@ body{
     float: left;
 }
 
+/* btn styling */
+
+.button--primary{
+    background-color: transparent;
+    color: #383838;
+    border: 1px solid #383838;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px 28px;
+}
+.button--primary:hover{
+    background-color: #383838;
+    color: #f9f9f9;
+}
+
 .button--transparent{
     background-color: transparent;
     color: #383838;
     text-decoration: none;
+    font-size: 18px;
 }
+
+/* img styling */
 
 .img--responsive{
     width: 100%;
@@ -55,6 +87,7 @@ body{
 }
 
 /* Navigation */
+
 .navigation__wrapper{
     position: absolute;
     width: 100%;
@@ -72,15 +105,33 @@ body{
     display: inline-block;
 }
 .navigation__link{
+    display: block;
+    position: relative;
     text-transform: uppercase;
     text-decoration: none;
     color: #FFF;
     padding: 1rem .5rem;
-    display: block;
 }
-.navigation__link:hover{
+.navigation__link:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 0% 50%;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+    background: #fff;
 }
+.navigation__link:hover:before{
+    transform: scale3d(1, 1, 1);
+}
+
 /* Header */
+
 header{
     width: 100%;
     height: 100vh;
@@ -120,6 +171,9 @@ header .container{
     bottom: 3px;
     margin-right: 10px;
 }
+
+/* Slider Navigation */
+
 .slider__navigation{
     width: 60px;
 }
@@ -138,6 +192,8 @@ header .container{
     opacity: .6;
 }
 
+/* Slider Pagination */
+
 .slider__pagination{
     position: absolute;
     bottom: 100px;
@@ -152,12 +208,12 @@ header .container{
     background-color: #fff;
     margin: 0 2px;
 }
-.slider__pagination .slider__pagination__bullet.active{
+.slider__pagination .slider__pagination__bullet.active, .slider__pagination .slider__pagination__bullet:hover{
     opacity: 1;
 }
 
-
 /* Section */
+
 .section{
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -175,13 +231,29 @@ header .container{
     margin-bottom: 6rem;
 }
 
-#explorations{
-    background-color: #f9f9f9;
-}
-
 /* Articles */
+
 article{
     background-color: #fff;
+    margin-bottom: 4rem;
+    transition: all 200ms ease-out;
+}
+article:hover{
+    box-shadow: -4px 45px 45px -30px rgba(0,0,0,0.25);
+}
+.article__img{
+    padding-right: 0;
+    line-height: 0;
+}
+.article__content{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-left: 30px;
+    padding-right: 45px;
+}
+.section__row--reversed .article__content{
+    padding-left: 45px;
+    padding-right: 30px;
 }
 .article__category{
     background-color: #01d0e9;
@@ -189,25 +261,52 @@ article{
     text-transform: uppercase;
     font-size: 1rem;
     padding: 5px 20px;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 .article__title{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: normal;
     margin-top: 6px;
+}
+
+.article__seporator--line{
+    display: block;
+    background-color: #f1f1f1;
+    width: 50px;
+    height: 4px;
 }
 
 .article__text{
     line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 2.5rem;
 }
 
-.article__button .icon--blue{
+.article__button .icon-arrow{
+    margin-left: 5px;
     color: #01d0e9;
+    transform: translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.article__button:hover .icon-arrow{
+    transform: translateX(4px);
 }
 
 .section__row--reversed .section__col6:first-child{
     float: right;
 }
 
+.section__row--reversed .article__img{
+    padding-left: 0;
+    padding-right: 15px;
+}
+
 /* Footer */
+
 footer{
     background-color: #222222;
     padding-top: 20px;
