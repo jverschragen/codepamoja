@@ -103,6 +103,16 @@ body{
     height: auto;
 }
 
+/* Logo */
+
+.navigation__logo{
+    max-height: 60px;
+}
+
+.footer__logo{
+    max-height: 40px;
+}
+
 /* Navigation */
 
 .navigation__wrapper{

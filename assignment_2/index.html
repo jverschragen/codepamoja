@@ -8,15 +8,18 @@
     <title>The Explorer</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/flex.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 <nav class="navigation__wrapper">
     <div class="container">
         <div class="logo__wrapper">
-            <img src="http://via.placeholder.com/180x60" alt="" class="logo">
+            <img src="img/logo.svg" alt="The Explorer" class="logo navigation__logo">
         </div>
-        <ul class="navigation">
+        <button class="navigation__toggler" type="button" data-toggle="collapse" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navigation" id="mainNav">
             <li class="navigation__item"><a class="navigation__link" href="#">Explorations</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#">Community</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#">About us</a></li>
@@ -117,7 +120,9 @@
     <div class="container">
         <div class="section__row">
             <div class="section__col12">
-                <div class="footer__logo"><img src="http://via.placeholder.com/180x60" alt="" class="logo"></div>
+                <div class="footer__logo__wrapper">
+                    <img src="img/logo.svg" alt="The Explorer" class="logo footer__logo">
+                </div>
                 <ul class="footer__links">
                     <li class="footer__item">
                         <a class="footer__link" href="#">
