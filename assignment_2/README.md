@@ -6,5 +6,5 @@ Het was even wennen om BEM te gebruiken.
 Opdracht 2:
 
 Ik had moeite met de images bij opdracht 2. Om de images gelijke hoogte te maken met de content zonder flexbox. 
-Met flexbox is dit makkelijk op te lossen. Dit heb ik met table en table-cell opgelost nu. 
-Dit zou ik normaal niet gebruiken. 
+Met flexbox is dit makkelijk op te lossen. Dit heb ik met table en table-cell geprobeerd op te lossen. 
+Maar heb ik toch weer verwijderd omdat ik het onhandig vind te gebruiken en vervangen door height.
