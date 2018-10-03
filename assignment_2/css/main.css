@@ -378,7 +378,7 @@ article:hover{
 }
 
 .articles__readmore{
-    diplay: inline-block;
+    display: inline-block;
     margin-top: 2rem;
 }
 
@@ -515,5 +515,10 @@ footer{
 
     .section__subtitle{
         margin-bottom: 3rem;
+    }
+
+    /* Explorations section */
+    .articles__readmore{
+        margin-top: 0rem;
     }
 }

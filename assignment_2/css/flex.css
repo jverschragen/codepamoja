@@ -27,14 +27,10 @@ body{
 /* sections styling */
 
 .section__row{
+    display: flex;
+    flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
-}
-@supports (display: flex) {
-    .section__row {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 @supports not (display: flex) {
     /* clearfix */
@@ -56,21 +52,22 @@ body{
 }
 
 .section__col12{
-    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.section__col6{
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
-.section__col6{
-    width: 50%;
-    float: left;
-}
-@supports (display: flex) {
+@supports not (display: flex) {
     .section__col12{
-        flex: 0 0 100%;
-        max-width: 100%;
+        width: 100%;
     }
+
     .section__col6{
-        flex: 0 0 50%;
-        max-width: 50%;
+        width: 50%;
+        float: left;
     }
 }
 
@@ -156,16 +153,16 @@ body{
     transform: scale3d(1, 1, 1);
 }
 
-@supports (display: flex) {
-    .navigation__wrapper > .container{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .navigation{
-        margin-left: auto;
-    }
+.navigation__wrapper > .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+.navigation{
+    margin-left: auto;
+}
+
 @supports not (display: flex) {
     .navigation{
         float: right;
@@ -184,10 +181,8 @@ body{
     padding: 0.25rem 0.75rem;
 }
 
-@supports (display: flex) {
-    .hamburger{
-        margin-left: auto;
-    }
+.hamburger{
+    margin-left: auto;
 }
 
 @supports not (display: flex) {
@@ -427,7 +422,7 @@ article:hover{
 }
 
 .articles__readmore{
-    diplay: inline-block;
+    display: inline-block;
     margin-top: 2rem;
 }
 
@@ -441,7 +436,6 @@ footer{
 
 .footer__logo{
     color: #FFFFFF;
-    float: left;
 }
 
 .footer__links{
@@ -460,17 +454,19 @@ footer{
     color: #D3D3D3;
 }
 
-@supports (display: flex) {
-    footer .section__col12{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .footer__links{
-        margin-left: auto;
-    }
+footer .section__col12{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
+.footer__links{
+    margin-left: auto;
+}
+
 @supports not (display: flex) {
+    .footer__logo{
+        float: left;
+    }
     .footer__links{
         float: right;
     }
@@ -499,6 +495,9 @@ footer{
 
 @media all and (max-width: 839px) {
     /* navigation */
+    .navigation__wrapper{
+        margin-top: 20px;
+    }
     .hamburger{
         display: block;
     }
@@ -529,9 +528,18 @@ footer{
         padding-top: 40px;
         padding-bottom: 40px;
     }
-
     footer .section__col12{
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @supports not (display: flex) {
+        .footer__logo{
+            float: none;
+        }
+        .footer__links{
+            float: none;
+        }
     }
 
     .footer__logo{
@@ -539,6 +547,7 @@ footer{
     }
     .footer__links{
         padding: 0;
+        margin-left: 0;
     }
     .footer__item{
         display: block;
@@ -550,10 +559,6 @@ footer{
 
 @media all and (max-width: 480px){
     /* header */
-    .header__wrapper{
-        right: 15px;
-        left: 15px;
-    }
     .header__subtitle{
         font-size: 18px;
     }
@@ -584,4 +589,10 @@ footer{
     .section__subtitle{
         margin-bottom: 3rem;
     }
+
+    /* Explorations section */
+    .articles__readmore{
+        margin-top: 0rem;
+    }
+
 }
