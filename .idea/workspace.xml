@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cb63edf5-3eb8-4d97-a6dd-7cbc968826ad" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/assignment_1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment_2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_2/css/flex.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/css/flex.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +27,7 @@
         <counts>
           <entry key="css" value="12" />
           <entry key="html" value="7" />
+          <entry key="md" value="1" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
@@ -34,19 +35,22 @@
         <counts>
           <entry key="CSS" value="12" />
           <entry key="HTML" value="7" />
+          <entry key="Markdown" value="1" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="6842" />
+          <entry key="css" value="6846" />
           <entry key="html" value="1855" />
+          <entry key="md" value="737" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="6842" />
+          <entry key="CSS" value="6846" />
           <entry key="HTML" value="1855" />
+          <entry key="Markdown" value="737" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -69,20 +73,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assignment_2/css/main.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assignment_2/css/flex.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="526" column="1" lean-forward="true" selection-start-line="415" selection-end-line="526" selection-end-column="1" />
+            <state relative-caret-position="-250">
+              <caret line="499" column="21" selection-start-line="499" selection-start-column="21" selection-end-line="499" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assignment_2/css/flex.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="409" lean-forward="true" selection-start-line="409" selection-end-line="409" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assignment_2/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -135,6 +142,7 @@
         <option value="$PROJECT_DIR$/assignment_2/index.html" />
         <option value="$PROJECT_DIR$/assignment_2/css/main.css" />
         <option value="$PROJECT_DIR$/assignment_2/css/flex.css" />
+        <option value="$PROJECT_DIR$/assignment_2/README.md" />
       </list>
     </option>
   </component>
@@ -147,10 +155,10 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="21" />
-    <option name="y" value="121" />
-    <option name="width" value="1680" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="466" />
+    <option name="y" value="23" />
+    <option name="width" value="1214" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -231,15 +239,15 @@
       <option name="presentableId" value="Default" />
       <updated>1538389028091</updated>
       <workItem from="1538389029327" duration="13169000" />
-      <workItem from="1538463257032" duration="16642000" />
+      <workItem from="1538463257032" duration="17186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29811000" />
+    <option name="totallyTimeSpent" value="30355000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="121" width="1680" height="1027" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2020757" />
@@ -300,10 +308,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_2/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/css/flex.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="409" lean-forward="true" selection-start-line="409" selection-end-line="409" />
+        <state relative-caret-position="-250">
+          <caret line="499" column="21" selection-start-line="499" selection-start-column="21" selection-end-line="499" selection-end-column="21" />
         </state>
       </provider>
     </entry>
