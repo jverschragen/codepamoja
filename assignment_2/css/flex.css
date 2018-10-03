@@ -64,11 +64,11 @@ body{
     float: left;
 }
 @supports (display: flex) {
-    section__col12{
+    .section__col12{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    section__col6{
+    .section__col6{
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -333,10 +333,30 @@ article{
 article:hover{
     box-shadow: -4px 45px 45px -30px rgba(0,0,0,0.25);
 }
-.article__img{
-    padding-right: 0;
-    line-height: 0;
+
+.article__img__wrapper {
+    position: relative;
+    padding-bottom: 71.5%;
 }
+.article__img{
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.img-exploration-1{
+    background-image: url(../img/chang-duong-372813-unsplash.jpg);
+}
+.img-exploration-2{
+    background-image: url(../img/delyn-stirewalt-520046-unsplash.jpg);
+}
+.img-exploration-3{
+    background-image: url(../img/wu-jianxiong-239318-unsplash.jpg);
+}
+
 .article__content{
     margin-top: 45px;
     margin-bottom: 45px;
@@ -388,19 +408,9 @@ article:hover{
     transform: translateX(4px);
 }
 
-.section__row--reversed .section__col6:first-child{
-    float: right;
-}
-
 .section__row--reversed .article__img{
     padding-left: 0;
     padding-right: 15px;
-}
-
-@supports (display: flex) {
-    .section__row--reversed{
-        flex-direction: row-reverse;
-    }
 }
 
 .articles__readmore{
@@ -453,7 +463,24 @@ footer{
     }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (min-width: 839px) {
+    /* columns equal height*/
+
+    .article__img__wrapper{
+        position: absolute;
+        height: 100%;
+        padding-bottom: 0;
+        left: 15px;
+        right: 0;
+    }
+
+    .section__row--reversed .article__img__wrapper{
+        left: 0;
+        right: 15px;
+    }
+}
+
+@media all and (max-width: 839px) {
     /* navigation */
     .hamburger{
         display: block;
@@ -467,9 +494,7 @@ footer{
         font-size: 2rem;
         max-width: 520px;
     }
-
     /* sections */
-
     .section__col6{
         width: 100%;
         float: left;
@@ -481,6 +506,7 @@ footer{
         padding-left: 15px;
         padding-right: 15px;
     }
+
     /* footer */
     footer {
         padding-top: 40px;
@@ -530,7 +556,7 @@ footer{
         bottom: 40px;
     }
 
-    /* section */
+    /* sections */
     .section{
         padding-top: 3rem;
         padding-bottom: 3rem;

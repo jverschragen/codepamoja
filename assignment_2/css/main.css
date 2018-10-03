@@ -46,6 +46,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    min-height: 1px;
 }
 
 .section__col12{
@@ -301,10 +302,30 @@ article{
 article:hover{
     box-shadow: -4px 45px 45px -30px rgba(0,0,0,0.25);
 }
-.article__img{
-    padding-right: 0;
-    line-height: 0;
+
+.article__img__wrapper {
+    position: relative;
+    padding-bottom: 71.5%;
 }
+.article__img{
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.img-exploration-1{
+    background-image: url(../img/chang-duong-372813-unsplash.jpg);
+}
+.img-exploration-2{
+    background-image: url(../img/delyn-stirewalt-520046-unsplash.jpg);
+}
+.img-exploration-3{
+    background-image: url(../img/wu-jianxiong-239318-unsplash.jpg);
+}
+
 .article__content{
     margin-top: 45px;
     margin-bottom: 45px;
@@ -356,15 +377,6 @@ article:hover{
     transform: translateX(4px);
 }
 
-.section__row--reversed .section__col6:first-child{
-    float: right;
-}
-
-.section__row--reversed .article__img{
-    padding-left: 0;
-    padding-right: 15px;
-}
-
 .articles__readmore{
     diplay: inline-block;
     margin-top: 2rem;
@@ -399,6 +411,32 @@ footer{
 }
 .footer__link:hover{
     color: #D3D3D3;
+}
+
+@media all and (min-width: 839px) {
+    /* columns equal height*/
+    .section__row--eqheight {
+        display: table;
+    }
+
+    .section__row--eqheight .section__col6 {
+        display: table-cell;
+        float: none;
+        overflow: hidden;
+    }
+
+    .article__img__wrapper{
+        position: absolute;
+        height: 100%;
+        padding-bottom: 0;
+        left: 15px;
+        right: 0;
+    }
+
+    .section__row--reversed .article__img__wrapper{
+        left: 0;
+        right: 15px;
+    }
 }
 
 @media all and (max-width: 839px) {
