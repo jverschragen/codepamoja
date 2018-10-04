@@ -102,10 +102,6 @@ body{
     max-height: 60px;
 }
 
-.footer__logo{
-    max-height: 40px;
-}
-
 /* Navigation */
 .navigation__wrapper{
     position: absolute;
@@ -125,6 +121,9 @@ body{
         float: left;
     }
     .navigation {
+        float: right;
+    }
+    .hamburger{
         float: right;
     }
 }
@@ -168,7 +167,6 @@ body{
 /* Hamburger menu */
 .hamburger{
     display: none;
-    float: right;
     position: relative;
     align-items: center;
     height: 64px;
@@ -447,11 +445,12 @@ footer > .container > .section__row > .section__col12{
     display: grid;
     grid-template-areas: "footer_logo footer_links";
 }
-
-.footer__logo{
-    color: #FFFFFF;
-    display: block;
+.footer__logo__wrapper{
     grid-area: footer_logo;
+}
+.footer__logo{
+    display: block;
+    max-height: 40px;
 }
 
 .footer__links{
@@ -461,7 +460,7 @@ footer > .container > .section__row > .section__col12{
 }
 
 @supports not (display:grid){
-    .footer__logo{
+    .footer__logo__wrapper{
         float: left;
     }
     .footer__links{
@@ -533,7 +532,6 @@ footer > .container > .section__row > .section__col12{
     /* Explorations section */
     article .section__row, article .section__row.section__row--reversed{
         grid-template-columns: 1fr;
-        grid-template-rows: 247px 1fr;
         grid-template-areas:
                 "image"
                 "text";
