@@ -5,18 +5,24 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <title>The Explorer</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
 </head>
 <body>
 <nav class="navigation__wrapper">
     <div class="container">
         <div class="logo__wrapper">
-            <img src="http://via.placeholder.com/180x60" alt="" class="logo">
+            <img src="img/logo.svg" alt="The Explorer" class="logo navigation__logo">
         </div>
-        <ul class="navigation">
+        <button class="navigation__toggler hamburger" type="button" data-toggle="collapse" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <ul class="navigation" id="mainNav">
             <li class="navigation__item"><a class="navigation__link" href="#">Explorations</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#">Community</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#">About us</a></li>
@@ -50,10 +56,12 @@
             <div class="section__col12">
                 <article>
                     <div class="section__row">
-                        <div class="section__col6 article__img">
-                            <img class="img--responsive" src="img/chang-duong-372813-unsplash.jpg" alt="">
+                        <div class="section__col6 article__col__img">
+                            <div class="article__img__wrapper">
+                                <div class="article__img img-exploration-1"></div>
+                            </div>
                         </div>
-                        <div class="section__col6">
+                        <div class="section__col6 article__col__content">
                             <div class="article__content">
                                 <span class="article__category">Winter</span>
                                 <h3 class="article__title">Jason's snow adventures.</h3>
@@ -66,14 +74,16 @@
                 </article>
             </div>
         </div>
-        <div class="section__row section__row--reversed">
+        <div class="section__row">
             <div class="section__col12">
                 <article>
-                    <div class="section__row">
-                        <div class="section__col6 article__img">
-                            <img class="img--responsive" src="img/delyn-stirewalt-520046-unsplash.jpg" alt="">
+                    <div class="section__row section__row--reversed">
+                        <div class="section__col6 article__col__img">
+                            <div class="article__img__wrapper">
+                                <div class="article__img img-exploration-2"></div>
+                            </div>
                         </div>
-                        <div class="section__col6">
+                        <div class="section__col6 article__col__content">
                             <div class="article__content">
                                 <span class="article__category">Hawaii</span>
                                 <h3 class="article__title">Life abobe the volcanoes.</h3>
@@ -90,10 +100,12 @@
             <div class="section__col12">
                 <article>
                     <div class="section__row">
-                        <div class="section__col6 article__img">
-                            <img class="img--responsive" src="img/wu-jianxiong-239318-unsplash.jpg" alt="">
+                        <div class="section__col6 article__col__img">
+                            <div class="article__img__wrapper">
+                                <div class="article__img img-exploration-3"></div>
+                            </div>
                         </div>
-                        <div class="section__col6">
+                        <div class="section__col6 article__col__content">
                             <div class="article__content">
                                 <span class="article__category">Beach</span>
                                 <h3 class="article__title">Meet me at the ocean.</h3>
@@ -117,7 +129,9 @@
     <div class="container">
         <div class="section__row">
             <div class="section__col12">
-                <div class="footer__logo"><img src="http://via.placeholder.com/180x60" alt="" class="logo"></div>
+                <div class="footer__logo__wrapper">
+                    <img src="img/logo.svg" alt="The Explorer" class="logo footer__logo">
+                </div>
                 <ul class="footer__links">
                     <li class="footer__item">
                         <a class="footer__link" href="#">

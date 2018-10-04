@@ -46,6 +46,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    min-height: 1px;
 }
 
 .section__col12{
@@ -84,6 +85,12 @@ body{
 .img--responsive{
     width: 100%;
     height: auto;
+}
+
+/* Logo */
+
+.navigation__logo{
+    max-height: 60px;
 }
 
 /* Navigation */
@@ -130,6 +137,55 @@ body{
     transform: scale3d(1, 1, 1);
 }
 
+/* Hamburger menu */
+.hamburger{
+    display: none;
+    float: right;
+    position: relative;
+    align-items: center;
+    height: 64px;
+    background: transparent;
+    border: none;
+    padding: 0.25rem 0.75rem;
+}
+.hamburger .hamburger-box{
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+}
+.hamburger .hamburger-box .hamburger-inner,
+.hamburger .hamburger-box .hamburger-inner:after,
+.hamburger .hamburger-box .hamburger-inner:before{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.hamburger .hamburger-box .hamburger-inner:before,
+.hamburger .hamburger-box .hamburger-inner:after{
+    content: "";
+    display: block;
+}
+
+.hamburger .hamburger-box .hamburger-inner{
+    display: block;
+    top: auto;
+    bottom: 0;
+    margin-top: -1px;
+}
+
+.hamburger .hamburger-box .hamburger-inner:before{
+    top: -8px;
+}
+
+.hamburger .hamburger-box .hamburger-inner:after {
+    top: -16px;
+}
+
+
 /* Header */
 
 header{
@@ -156,7 +212,8 @@ header .container{
     max-width: 860px;
 }
 .header__subtitle{
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 600;
     text-transform: uppercase;
     color: #fff;
     bottom: 1rem;
@@ -166,10 +223,10 @@ header .container{
     display: inline-block;
     background-color: #01d0e9;
     width: 40px;
-    height: 5px;
+    height: 4px;
     position: relative;
-    bottom: 3px;
-    margin-right: 10px;
+    bottom: 5px;
+    margin-right: 30px;
 }
 
 /* Slider Navigation */
@@ -241,10 +298,30 @@ article{
 article:hover{
     box-shadow: -4px 45px 45px -30px rgba(0,0,0,0.25);
 }
-.article__img{
-    padding-right: 0;
-    line-height: 0;
+
+.article__img__wrapper {
+    position: relative;
+    padding-bottom: 71.5%;
 }
+.article__img{
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.img-exploration-1{
+    background-image: url(../img/chang-duong-372813-unsplash.jpg);
+}
+.img-exploration-2{
+    background-image: url(../img/delyn-stirewalt-520046-unsplash.jpg);
+}
+.img-exploration-3{
+    background-image: url(../img/wu-jianxiong-239318-unsplash.jpg);
+}
+
 .article__content{
     margin-top: 45px;
     margin-bottom: 45px;
@@ -296,13 +373,9 @@ article:hover{
     transform: translateX(4px);
 }
 
-.section__row--reversed .section__col6:first-child{
-    float: right;
-}
-
-.section__row--reversed .article__img{
-    padding-left: 0;
-    padding-right: 15px;
+.articles__readmore{
+    display: inline-block;
+    margin-top: 2rem;
 }
 
 /* Footer */
@@ -312,10 +385,12 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-.footer__logo{
-    color: #FFFFFF;
+.footer__logo__wrapper{
     float: left;
+}
+.footer__logo{
+    display: block;
+    max-height: 40px;
 }
 
 .footer__links{
@@ -333,4 +408,113 @@ footer{
 }
 .footer__link:hover{
     color: #D3D3D3;
+}
+
+@media all and (min-width: 839px) {
+
+    .article__img__wrapper{
+        position: absolute;
+        height: 459px;
+        padding-bottom: 0;
+        left: 15px;
+        right: 0;
+    }
+    .section__row--reversed .section__col6:first-child{
+        float: right;
+    }
+    .section__row--reversed .article__img__wrapper{
+        left: 0;
+        right: 15px;
+    }
+}
+
+@media all and (max-width: 839px) {
+    /* navigation */
+    .hamburger{
+        display: block;
+    }
+    
+    #mainNav{
+        display: none;
+    }
+    /* header */
+    .header__title{
+        font-size: 2rem;
+        max-width: 520px;
+    }
+    /* sections */
+    .section__col6{
+        width: 100%;
+        float: left;
+    }
+
+    /* Explorations section */
+
+    .article__img, .section__row--reversed .article__img{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* footer */
+    footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .footer__logo{
+        float: none;
+        margin-bottom: 2rem;
+    }
+    .footer__links{
+        float: none;
+        padding: 0;
+    }
+    .footer__item{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 480px){
+    /* header */
+    .header__wrapper{
+        right: 15px;
+        left: 15px;
+    }
+    .header__subtitle{
+        font-size: 18px;
+    }
+    .header__subtitle::before{
+        width: 30px;
+        margin-right: 20px;
+    }
+    .header__title{
+        font-size: 1.6rem;
+        max-width: 100%;
+    }
+    .slider__navigation{
+        display: none;
+    }
+    .slider__pagination{
+        text-align: center;
+        width: 260px;
+        max-widht: 100%;
+        bottom: 40px;
+    }
+
+    /* sections */
+    .section{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .section__subtitle{
+        margin-bottom: 3rem;
+    }
+
+    /* Explorations section */
+    .articles__readmore{
+        margin-top: 0rem;
+    }
 }
