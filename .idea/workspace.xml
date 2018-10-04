@@ -4,11 +4,7 @@
     <list default="true" id="cb63edf5-3eb8-4d97-a6dd-7cbc968826ad" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/assignment_1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/css/flex.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/css/flex.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_2/css/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/css/grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +18,8 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,15 +40,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="7768" />
-          <entry key="html" value="1924" />
+          <entry key="css" value="8108" />
+          <entry key="html" value="1932" />
           <entry key="md" value="950" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="7768" />
-          <entry key="HTML" value="1924" />
+          <entry key="CSS" value="8108" />
+          <entry key="HTML" value="1932" />
           <entry key="Markdown" value="950" />
         </counts>
       </usages-collector>
@@ -70,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="63" column="71" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
+            <state relative-caret-position="165">
+              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -79,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment_2/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="460" column="16" lean-forward="true" selection-end-line="523" selection-end-column="1" />
+            <state relative-caret-position="-7">
+              <caret line="434" column="20" lean-forward="true" selection-start-line="434" selection-start-column="20" selection-end-line="434" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -97,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment_2/css/grid.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="127" column="21" lean-forward="true" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
+            <state relative-caret-position="616">
+              <caret line="459" column="22" selection-start-line="459" selection-start-column="22" selection-end-line="459" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -135,6 +131,7 @@
       <find>float</find>
       <find>.article__img__wrapper</find>
       <find>header</find>
+      <find>logo__wr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,10 +145,10 @@
         <option value="$PROJECT_DIR$/assignment_2/flex.css" />
         <option value="$PROJECT_DIR$/assignment_1/index.html" />
         <option value="$PROJECT_DIR$/assignment_2/main.css" />
-        <option value="$PROJECT_DIR$/assignment_2/css/main.css" />
         <option value="$PROJECT_DIR$/assignment_2/css/flex.css" />
         <option value="$PROJECT_DIR$/assignment_2/README.md" />
         <option value="$PROJECT_DIR$/assignment_2/index.html" />
+        <option value="$PROJECT_DIR$/assignment_2/css/main.css" />
         <option value="$PROJECT_DIR$/assignment_2/css/grid.css" />
       </list>
     </option>
@@ -176,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,7 +202,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,17 +246,18 @@
       <updated>1538389028091</updated>
       <workItem from="1538389029327" duration="13169000" />
       <workItem from="1538463257032" duration="21915000" />
+      <workItem from="1538635716416" duration="2178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35084000" />
+    <option name="totallyTimeSpent" value="37262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="840" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41478696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42481202" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,13 +298,6 @@
     <entry file="file://$PROJECT_DIR$/assignment_2/img/logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_2/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="460" column="16" lean-forward="true" selection-end-line="523" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -326,15 +317,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="63" column="71" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
+        <state relative-caret-position="165">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_2/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="434" column="20" lean-forward="true" selection-start-line="434" selection-start-column="20" selection-end-line="434" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/css/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="127" column="21" lean-forward="true" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
+        <state relative-caret-position="616">
+          <caret line="459" column="22" selection-start-line="459" selection-start-column="22" selection-end-line="459" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -120,7 +120,7 @@ body{
     display: grid;
     align-items: center;
 }
-@supports not (display: grid;) {
+@supports not (display: grid) {
     .logo__wrapper{
         float: left;
     }
@@ -128,7 +128,11 @@ body{
         float: right;
     }
 }
+.logo__wrapper{
+    grid-area: logo;
+}
 .navigation{
+    grid-area: menu;
     margin-left: auto;
     list-style: none;
 }
@@ -439,16 +443,32 @@ footer{
     padding-bottom: 20px;
 }
 
+footer > .container > .section__row > .section__col12{
+    display: grid;
+    grid-template-areas: "footer_logo footer_links";
+}
+
 .footer__logo{
     color: #FFFFFF;
-    float: left;
     display: block;
+    grid-area: footer_logo;
 }
 
 .footer__links{
+    grid-area: footer_links;
     list-style: none;
-    float: right;
+    margin-left: auto;
 }
+
+@supports not (display:grid){
+    .footer__logo{
+        float: left;
+    }
+    .footer__links{
+        float: right;
+    }
+}
+
 .footer__item{
     display: inline-block;
     margin-left: 30px;
@@ -487,6 +507,9 @@ footer{
 
 @media all and (max-width: 839px) {
     /* navigation */
+    .navigation__wrapper > .container{
+        grid-template-columns: 1fr 56px;
+    }
     .hamburger{
         display: block;
     }
@@ -499,13 +522,22 @@ footer{
         font-size: 2rem;
         max-width: 520px;
     }
-    /* sections */
-    .section__col6{
-        width: 100%;
-        float: left;
+    @supports not (display:grid) {
+        /* sections */
+        .section__col6 {
+            width: 100%;
+            float: left;
+        }
     }
 
     /* Explorations section */
+    article .section__row, article .section__row.section__row--reversed{
+        grid-template-columns: 1fr;
+        grid-template-rows: 247px 1fr;
+        grid-template-areas:
+                "image"
+                "text";
+    }
 
     .article__img, .section__row--reversed .article__img{
         padding-left: 15px;
@@ -519,12 +551,18 @@ footer{
     }
 
     .footer__logo{
-        float: none;
         margin-bottom: 2rem;
     }
     .footer__links{
-        float: none;
         padding: 0;
+    }
+    @supports not (display:grid) {
+        .footer__logo{
+            float: none;
+        }
+        .footer__links{
+            float: none;
+        }
     }
     .footer__item{
         display: block;
@@ -535,6 +573,10 @@ footer{
 }
 
 @media all and (max-width: 480px){
+
+    header .header__wrapper{
+        grid-column-end: 4;
+    }
     /* header */
     .header__wrapper{
         right: 15px;
