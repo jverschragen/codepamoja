@@ -547,12 +547,15 @@ footer > .container > .section__row > .section__col12{
         padding-top: 40px;
         padding-bottom: 40px;
     }
-
+    footer > .container > .section__row > .section__col12{
+        grid-template-areas: "footer_logo" "footer_links";
+    }
     .footer__logo{
         margin-bottom: 2rem;
     }
     .footer__links{
         padding: 0;
+        margin-left: inherit;
     }
     @supports not (display:grid) {
         .footer__logo{
